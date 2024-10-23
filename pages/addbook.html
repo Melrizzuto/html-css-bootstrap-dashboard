@@ -58,25 +58,39 @@
         </nav>
 
     </header>
-    <main class="container-lg d-lg-flex justify-content-around mt-4">
+    <main class="container-lg px-sm-5 my-4" id="addbook">
+        <h1>Nuovo Libro</h1>
         <form class="row g-3">
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">Email</label>
-              <input type="email" class="form-control" id="inputEmail4">
+            <div class="col-6">
+              <label for="authorname" class="form-label">Nome autore</label>
+              <input type="text" class="form-control" id="authorname" name="authorname" required
+              placeholder="Inserisci il nome dell'autore.">
             </div>
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Password</label>
-              <input type="password" class="form-control" id="inputPassword4">
-            </div>
-            <div class="col-12">
-              <label for="inputAddress" class="form-label">Address</label>
-              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <div class="col-6">
+              <label for="authorsurname" class="form-label">Password</label>
+              <input type="password" class="form-control" id="authorsurname" name="authorsurname" required placeholder="Inserisci il cognome dell'autore.">
             </div>
             <div class="col-12">
+                <label for="booktitle" class="form-label">Titolo</label>
+                <input type="text" class="form-control" maxlength="50" id="booktitle" name="booktitle" required
+                placeholder="Inserisci il il titolo del libro.">
+                <div class="form-text">Titolo versione italiana - Lunghezza caratteri max 50</div>
+              </div>
+            <div class="col-md-4">
+              <label for="genre" class="form-label">Genere</label>
+              <select name="genre" class="form-select" id="genre">
+                <option value="Fantasy">Fantasy</option>
+                <option value="Romanzo">Romanzo</option>
+                <option value="Giallo">Giallo</option>
+                <option value="Anime">Anime</option>
+                <option value="Saggistica">Saggistica</option>
+              </select>
+            </div>
+            <div class="col-md-4">
               <label for="inputAddress2" class="form-label">Address 2</label>
               <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <label for="inputCity" class="form-label">City</label>
               <input type="text" class="form-control" id="inputCity">
             </div>
